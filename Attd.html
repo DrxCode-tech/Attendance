@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmailJS Sender</title>
+  <link rel="stylesheet" href="Attd.css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <div class="container">
+    <h2>Send Email</h2>
+    <form id="emailForm">
+      <label for="to_email">Recipient Email</label>
+      <input type="email" id="to_email" placeholder="Enter recipient email" required>
+      
+      <label for="from_name">Your Name</label>
+      <input type="text" id="from_name" value="Anietie Daniel" readonly>
+      
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Enter your message here" required></textarea>
+      
+      <button type="submit">Send Email</button>
+    </form>
+  </div>
+  
+  <!-- Include EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="Attd.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
